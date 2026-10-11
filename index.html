@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Banagale | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Stephen Rockwel Banagale, a BS Information Technology student at Laguna State Polytechnic University. Skills in HTML, CSS, JavaScript, Java, C#, and Python.">
+    <meta name="author" content="Stephen Rockwel Banagale">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://banagalestephenrockwel-collab.github.io/Rockwel-Portfolio/">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
+
+    <meta property="og:title" content="Stephen Rockwel Banagale | Web Developer Portfolio">
+    <meta property="og:description" content="BSIT student and aspiring web developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://banagalestephenrockwel-collab.github.io/Rockwel-Portfolio/">
+    <meta property="og:image" content="https://banagalestephenrockwel-collab.github.io/Rockwel-Portfolio/me.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stephen Rockwel Banagale | Web Developer Portfolio">
+    <meta name="twitter:description" content="BSIT student and aspiring web developer.">
+    <meta name="twitter:image" content="https://banagalestephenrockwel-collab.github.io/Rockwel-Portfolio/me.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        try {
+            document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        } catch (e) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader" id="loader" aria-hidden="true">
+        <span class="loader-text">Rockwel</span>
+        <div class="loader-bar">
+            <div class="loader-fill" id="loader-fill"></div>
+        </div>
+        <span class="loader-percent" id="loader-percent">0%</span>
+    </div>
+
+    <div class="progress-bar"></div>
+
+    <header>
+        <a href="#home" class="logo">Rockwel</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#badge">Badges</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </svg>
+        </button>
+        <div class="menu-toggle" id="menu-toggle" role="button" tabindex="0" aria-label="Toggle menu">☰</div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+
+            <div class="social-pills">
+                <a href="https://www.facebook.com/profile.php?id=61578231022201" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Facebook">
+                    <span class="pill-icon" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/facebook.svg')"></span>
+                    <span class="pill-label">Facebook</span>
+                </a>
+                <a href="https://github.com/banagalestephenrockwel-collab" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub">
+                    <span class="pill-icon" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg')"></span>
+                    <span class="pill-label">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/stephen-rockwel-ba%C3%B1agale-522953428/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                    <span class="pill-icon" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/linkedin.svg')"></span>
+                    <span class="pill-label">LinkedIn</span>
+                </a>
+                <a href="https://discord.com/users/1316761044651212871" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Discord">
+                    <span class="pill-icon" style="--icon:url('https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/discord.svg')"></span>
+                    <span class="pill-label">Discord</span>
+                </a>
+            </div>
+
+            <h1>Rockwel Bañagale</h1>
+            <h2><span id="typed">Web Developer</span><span class="typed-cursor"></span></h2>
+
+            <div class="home-actions">
+                <a href="#contact" class="hero-btn">Contact Me</a>
+                <a href="#projects" class="hero-btn">My Projects</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="services" id="skills">
+        <h2 class="heading">My <span>Expertise</span></h2>
+
+        <div class="skills-filter" role="group" aria-label="Filter skills">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="languages" aria-pressed="false">Languages</button>
+            <button type="button" class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+            <button type="button" class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+            <button type="button" class="filter-btn" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+
+            <div class="skill-chip" data-cat="languages backend">
+                <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C# logo" loading="lazy">
+                </div>
+                <span class="skill-name">C#</span>
+            </div>
+
+            <div class="skill-chip" data-cat="languages backend">
+                <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" loading="lazy">
+                </div>
+                <span class="skill-name">Java</span>
+            </div>
+
+            <div class="skill-chip" data-cat="languages backend">
+                <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" loading="lazy">
+                </div>
+                <span class="skill-name">Python</span>
+            </div>
+
+            <div class="skill-chip" data-cat="languages frontend">
+                <div class="skill-icon">
+                    <img src="java-script.png" alt="JavaScript logo" loading="lazy">
+                </div>
+                <span class="skill-name">JavaScript</span>
+            </div>
+
+            <div class="skill-chip" data-cat="frontend">
+                <div class="skill-icon">
+                    <img src="web.png" alt="HTML logo" loading="lazy">
+                </div>
+                <span class="skill-name">HTML</span>
+            </div>
+
+            <div class="skill-chip" data-cat="frontend">
+                <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo" loading="lazy">
+                </div>
+                <span class="skill-name">CSS</span>
+            </div>
+
+            <div class="skill-chip" data-cat="tools">
+                <div class="skill-icon">
+                    <span class="icon-capcut" role="img" aria-label="CapCut logo"></span>
+                </div>
+                <span class="skill-name">CapCut</span>
+            </div>
+
+            <div class="skill-chip" data-cat="tools">
+                <div class="skill-icon">
+                    <span class="icon-canva" role="img" aria-label="Canva logo"></span>
+                </div>
+                <span class="skill-name">Canva</span>
+            </div>
+
+            <div class="skill-chip" data-cat="tools">
+                <div class="skill-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo" loading="lazy">
+                </div>
+                <span class="skill-name">VS Code</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-wrapper">
+
+            <div class="about-img">
+                <img src="me.jpg" alt="Portrait of Stephen Rockwel Banagale" loading="lazy">
+            </div>
+
+            <div class="about-info">
+                <h2 class="about-title">About <span>Me</span></h2>
+                <div class="about-line"></div>
+
+                <p>
+                    I am a student at Laguna State Polytechnic University, pursuing a degree
+                    in Bachelor of Science in Information Technology. I am passionate about web
+                    development and constantly strive to enhance my skills in this field.
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Elementary</h4>
+                        <p>Bitin Elementary School</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>High School</h4>
+                        <p>Bitin Integrated National High School | Sto. Tomas Senior High School</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h4>College</h4>
+                        <p>Laguna State Polytechnic University</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="project-carousel" id="project-carousel">
+            <div class="project-viewport">
+                <div class="project-track" id="project-track">
+
+                    <div class="project-detail">
+                        <div class="detail-left">
+                            <div class="terminal" data-app="temperature">
+                                <div class="terminal-bar">
+                                    <span class="terminal-dot red"></span>
+                                    <span class="terminal-dot yellow"></span>
+                                    <span class="terminal-dot green"></span>
+                                    <span class="terminal-name">temperature</span>
+                                </div>
+
+                                <div class="terminal-log" aria-live="polite">
+                                    <p class="terminal-title">═══ Temperature Converter ═══</p>
+                                    <p>Choose an operation to begin.</p>
+                                    <input type="text" class="terminal-input" inputmode="decimal" autocomplete="off" aria-label="Enter a number" hidden>
+                                </div>
+
+                                <div class="terminal-actions">
+                                    <button type="button" class="terminal-btn" data-op="c2f">°C → °F</button>
+                                    <button type="button" class="terminal-btn" data-op="f2c">°F → °C</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-info">
+                            <span class="detail-label">Console App</span>
+                            <h3>Temperature Converter</h3>
+                            <p>Celsius and Fahrenheit converter, ported from a C# console.</p>
+                            <div class="detail-tags">
+                                <span>C#</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="temperature-converter.html" target="_blank" rel="noopener" class="hero-btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-detail">
+                        <div class="detail-left">
+                            <div class="terminal" data-app="calculator">
+                                <div class="terminal-bar">
+                                    <span class="terminal-dot red"></span>
+                                    <span class="terminal-dot yellow"></span>
+                                    <span class="terminal-dot green"></span>
+                                    <span class="terminal-name">calculator</span>
+                                </div>
+
+                                <div class="terminal-log" aria-live="polite">
+                                    <p class="terminal-title">═══ Simple Calculator ═══</p>
+                                    <p>Choose an operation to begin.</p>
+                                    <input type="text" class="terminal-input" inputmode="decimal" autocomplete="off" aria-label="Enter a number" hidden>
+                                </div>
+
+                                <div class="terminal-actions">
+                                    <button type="button" class="terminal-btn" data-op="add">Add</button>
+                                    <button type="button" class="terminal-btn" data-op="subtract">Subtract</button>
+                                    <button type="button" class="terminal-btn" data-op="multiply">Multiply</button>
+                                    <button type="button" class="terminal-btn" data-op="divide">Divide</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="detail-info">
+                            <span class="detail-label">Console App</span>
+                            <h3>Simple Calculator</h3>
+                            <p>A C# calculator application designed to perform basic arithmetic operations.</p>
+                            <div class="detail-tags">
+                                <span>C#</span>
+                                <span>.NET</span>
+                            </div>
+                            <a href="simple-calculator.html" target="_blank" rel="noopener" class="hero-btn">Live Demo</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-pager">
+                <div class="pager-dots" id="pager-dots"></div>
+
+                <div class="pager-controls">
+                    <button type="button" class="pager-btn" id="pager-prev" aria-label="Previous project">&#8249;</button>
+                    <span class="pager-count" id="pager-count" aria-live="polite">01 / 02</span>
+                    <button type="button" class="pager-btn" id="pager-next" aria-label="Next project">&#8250;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="badges" id="badge">
+        <h2 class="heading">My <span>Badges</span> / <span>Certificates</span></h2>
+
+        <div class="badges-grid" id="badges-grid">
+
+            <button type="button" class="badge-chip" data-cert="Python1-cert.jpg" data-title="Python Essentials 1">
+                <span class="badge-icon"><img src="pe1.png" alt="Python Essentials 1 badge" loading="lazy"></span>
+                <span class="badge-text">
+                    <span class="badge-name">Python Essentials 1</span>
+                    <span class="badge-hint">View certificate</span>
+                </span>
+            </button>
+
+            <button type="button" class="badge-chip" data-cert="Python2-cert.jpg" data-title="Python Essentials 2">
+                <span class="badge-icon"><img src="pe2.png" alt="Python Essentials 2 badge" loading="lazy"></span>
+                <span class="badge-text">
+                    <span class="badge-name">Python Essentials 2</span>
+                    <span class="badge-hint">View certificate</span>
+                </span>
+            </button>
+
+            <button type="button" class="badge-chip" data-cert="IDS-cert.jpg" data-title="Introduction to Data Science">
+                <span class="badge-icon"><img src="introduction-to-data-science.png" alt="Introduction to Data Science badge" loading="lazy"></span>
+                <span class="badge-text">
+                    <span class="badge-name">Introduction to Data Science</span>
+                    <span class="badge-hint">View certificate</span>
+                </span>
+            </button>
+
+            <button type="button" class="badge-chip" data-cert="EDTP-cert.jpg" data-title="Enterprise Design Thinking Practitioner">
+                <span class="badge-icon"><img src="enterprise-design-thinking-practitioner.png" alt="Enterprise Design Thinking Practitioner badge" loading="lazy"></span>
+                <span class="badge-text">
+                    <span class="badge-name">Enterprise Design Thinking Practitioner</span>
+                    <span class="badge-hint">View certificate</span>
+                </span>
+            </button>
+
+            <button type="button" class="badge-chip" data-cert="JS-cert.jpg" data-title="JavaScript Essentials 1">
+                <span class="badge-icon"><img src="javascript-essentials-1.png" alt="JavaScript Essentials 1 badge" loading="lazy"></span>
+                <span class="badge-text">
+                    <span class="badge-name">JavaScript Essentials 1</span>
+                    <span class="badge-hint">View certificate</span>
+                </span>
+            </button>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <a href="mailto:banagalestephenrockwel@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>banagalestephenrockwel@gmail.com</p>
+                    </div>
+                </a>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Laguna, Philippines</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mvkgepyo" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+                <p class="form-status" id="form-status"></p>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Rockwel Banagale.</p>
+    </footer>
+
+    <a href="#home" class="to-top" aria-label="Back to top">↑</a>
+
+    <div class="cert-modal" id="cert-modal" hidden role="dialog" aria-modal="true" aria-label="Certificate">
+        <div class="cert-box">
+            <button type="button" class="cert-close" id="cert-close" aria-label="Close certificate">✕</button>
+            <h3 class="cert-title" id="cert-title"></h3>
+            <img id="cert-img" alt="">
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        const nav = document.querySelector('nav');
+        const menuToggle = document.getElementById('menu-toggle');
+        const progressBar = document.querySelector('.progress-bar');
+        const toTop = document.querySelector('.to-top');
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            themeToggle.setAttribute(
+                'aria-label',
+                theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+            );
+            try { localStorage.setItem('theme', theme); } catch (e) {}
+        }
+
+        applyTheme(document.documentElement.getAttribute('data-theme') || 'dark');
+
+        themeToggle.addEventListener('click', () => {
+            const current = document.documentElement.getAttribute('data-theme');
+            applyTheme(current === 'dark' ? 'light' : 'dark');
+        });
+
+        function toggleMenu() {
+            const open = nav.classList.toggle('active');
+            menuToggle.textContent = open ? '✕' : '☰';
+        }
+
+        function closeMenu() {
+            nav.classList.remove('active');
+            menuToggle.textContent = '☰';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMenu();
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+
+            sections.forEach(sec => {
+                if (window.scrollY >= sec.offsetTop - 200) {
+                    current = sec.getAttribute('id');
+                }
+            });
+
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 5) {
+                current = 'contact';
+            }
+
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+
+            const h = document.documentElement;
+            const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+            progressBar.style.width = pct + '%';
+
+            toTop.classList.toggle('show', window.scrollY > 500);
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+                closeMenu();
+            });
+        });
+
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const skillChips = document.querySelectorAll('.skill-chip');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                filterButtons.forEach(b => {
+                    const isActive = b === btn;
+                    b.classList.toggle('active', isActive);
+                    b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                skillChips.forEach(chip => {
+                    const cats = chip.dataset.cat.split(' ');
+                    chip.hidden = !(filter === 'all' || cats.includes(filter));
+                });
+            });
+        });
+
+        const certModal = document.getElementById('cert-modal');
+        const certImg = document.getElementById('cert-img');
+        const certTitle = document.getElementById('cert-title');
+        const certClose = document.getElementById('cert-close');
+        let lastBadge = null;
+
+        function openCert(chip) {
+            lastBadge = chip;
+            certImg.src = chip.dataset.cert;
+            certImg.alt = chip.dataset.title + ' certificate';
+            certTitle.textContent = chip.dataset.title;
+            certModal.hidden = false;
+            document.body.style.overflow = 'hidden';
+            certClose.focus();
+        }
+
+        function closeCert() {
+            certModal.hidden = true;
+            certImg.removeAttribute('src');
+            document.body.style.overflow = '';
+            if (lastBadge) lastBadge.focus();
+        }
+
+        document.querySelectorAll('.badge-chip').forEach(chip => {
+            chip.addEventListener('click', () => openCert(chip));
+        });
+
+        certClose.addEventListener('click', closeCert);
+
+        certModal.addEventListener('click', (e) => {
+            if (e.target === certModal) closeCert();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (certModal.hidden) return;
+
+            if (e.key === 'Escape') closeCert();
+
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                certClose.focus();
+            }
+        });
+
+        const revealItems = document.querySelectorAll(
+            '.heading, .skills-filter, .skills-grid, .badges-grid, .home-content, .about-img, .about-info, .project-carousel, .contact-card, .contact-form'
+        );
+
+        revealItems.forEach(el => el.classList.add('reveal'));
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle('show', entry.isIntersecting);
+            });
+        }, { threshold: 0.15 });
+
+        revealItems.forEach(el => observer.observe(el));
+
+        const timeline = document.querySelector('.timeline');
+
+        new IntersectionObserver((entries) => {
+            timeline.classList.toggle('play', entries[0].isIntersecting);
+        }, { threshold: 0.6 }).observe(timeline);
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const typedEl = document.getElementById('typed');
+        const roles = ['Web Developer', 'IT Student'];
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+
+        function typeRole() {
+            const word = roles[roleIndex];
+            charIndex += deleting ? -1 : 1;
+            typedEl.textContent = word.slice(0, charIndex);
+
+            let delay = deleting ? 50 : 100;
+
+            if (!deleting && charIndex === word.length) {
+                deleting = true;
+                delay = 1500;
+            } else if (deleting && charIndex === 0) {
+                deleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                delay = 400;
+            }
+
+            setTimeout(typeRole, delay);
+        }
+
+        function startTyping() {
+            if (reduceMotion) return;
+            typedEl.textContent = '';
+            typeRole();
+        }
+
+        startTyping();
+
+        const projectTrack = document.getElementById('project-track');
+        const projectSlides = Array.from(projectTrack.children);
+        const pagerDots = document.getElementById('pager-dots');
+        const pagerCount = document.getElementById('pager-count');
+        const pagerPrev = document.getElementById('pager-prev');
+        const pagerNext = document.getElementById('pager-next');
+        const projectCarousel = document.getElementById('project-carousel');
+        let slideIndex = 0;
+
+        projectSlides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.type = 'button';
+            dot.className = 'pager-dot';
+            dot.setAttribute('aria-label', 'Go to project ' + (i + 1));
+            dot.addEventListener('click', () => goToSlide(i));
+            pagerDots.appendChild(dot);
+        });
+
+        const dotButtons = Array.from(pagerDots.children);
+
+        function pad(n) {
+            return String(n).padStart(2, '0');
+        }
+
+        function goToSlide(i) {
+            slideIndex = (i + projectSlides.length) % projectSlides.length;
+            projectTrack.style.transform = 'translateX(-' + slideIndex * 100 + '%)';
+            pagerCount.textContent = pad(slideIndex + 1) + ' / ' + pad(projectSlides.length);
+
+            dotButtons.forEach((d, k) => d.classList.toggle('active', k === slideIndex));
+            projectSlides.forEach((s, k) => {
+                s.inert = k !== slideIndex;
+                s.setAttribute('aria-hidden', k !== slideIndex ? 'true' : 'false');
+            });
+        }
+
+        pagerPrev.addEventListener('click', () => goToSlide(slideIndex - 1));
+        pagerNext.addEventListener('click', () => goToSlide(slideIndex + 1));
+
+        let touchStartX = 0;
+
+        projectCarousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+        }, { passive: true });
+
+        projectCarousel.addEventListener('touchend', (e) => {
+            const diff = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(diff) > 60) goToSlide(slideIndex + (diff < 0 ? 1 : -1));
+        }, { passive: true });
+
+        goToSlide(0);
+
+        const SYMBOLS = { add: '+', subtract: '−', multiply: '×', divide: '÷' };
+
+        function fmt(n) {
+            return String(Number(n.toFixed(2)));
+        }
+
+        const TERMINALS = {
+            temperature: {
+                steps: ['Enter temperature:'],
+                run(op, nums) {
+                    const n = nums[0];
+                    if (op === 'c2f') {
+                        if (n < -273.15) return { error: 'Below absolute zero (−273.15 °C).' };
+                        return { text: fmt(n) + ' °C = ' + fmt(n * 9 / 5 + 32) + ' °F' };
+                    }
+                    if (n < -459.67) return { error: 'Below absolute zero (−459.67 °F).' };
+                    return { text: fmt(n) + ' °F = ' + fmt((n - 32) * 5 / 9) + ' °C' };
+                }
+            },
+            calculator: {
+                steps: ['Enter first number:', 'Enter second number:'],
+                run(op, nums) {
+                    const a = nums[0];
+                    const b = nums[1];
+                    if (op === 'divide' && b === 0) return { error: 'Cannot divide by zero.' };
+                    const r = op === 'add' ? a + b
+                            : op === 'subtract' ? a - b
+                            : op === 'multiply' ? a * b
+                            : a / b;
+                    return { text: a + ' ' + SYMBOLS[op] + ' ' + b + ' = ' + Number(r.toPrecision(12)) };
+                }
+            }
+        };
+
+        document.querySelectorAll('.terminal').forEach(term => {
+            const app = TERMINALS[term.dataset.app];
+            const log = term.querySelector('.terminal-log');
+            const input = term.querySelector('.terminal-input');
+            let op = null;
+            let nums = [];
+
+            function say(text, cls) {
+                const p = document.createElement('p');
+                p.textContent = text;
+                if (cls) p.className = cls;
+                log.insertBefore(p, input);
+                log.scrollTop = log.scrollHeight;
+            }
+
+            function finish() {
+                op = null;
+                nums = [];
+                input.value = '';
+                input.hidden = true;
+                say('Choose an operation to begin.');
+            }
+
+            term.querySelectorAll('.terminal-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    say('> ' + btn.textContent);
+
+                    op = btn.dataset.op;
+                    nums = [];
+                    say(app.steps[0]);
+                    input.hidden = false;
+                    input.value = '';
+                    input.focus();
+                });
+            });
+
+            input.addEventListener('keydown', (e) => {
+                if (e.key !== 'Enter') return;
+
+                const raw = input.value.trim().replace(',', '.');
+                const n = Number(raw);
+
+                if (raw === '' || !Number.isFinite(n)) {
+                    say('Invalid input. Enter a number:', 'terminal-error');
+                    return;
+                }
+
+                say('> ' + raw);
+                input.value = '';
+                nums.push(n);
+
+                if (nums.length < app.steps.length) {
+                    say(app.steps[nums.length]);
+                    return;
+                }
+
+                const result = app.run(op, nums);
+                if (result.error) say(result.error, 'terminal-error');
+                else say(result.text, 'terminal-result');
+                finish();
+            });
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+        const submitBtn = contactForm.querySelector('.contact-btn');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            formStatus.className = 'form-status';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    formStatus.textContent = '✅ Message sent! Thank you.';
+                    formStatus.className = 'form-status show success';
+                    contactForm.reset();
+                } else {
+                    throw new Error('Failed');
+                }
+            } catch (error) {
+                formStatus.textContent = '❌ Something went wrong. Please try again.';
+                formStatus.className = 'form-status show error';
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send Message';
+
+            setTimeout(() => {
+                formStatus.classList.remove('show');
+            }, 6000);
+        });
+
+        const loader = document.getElementById('loader');
+        const loaderFill = document.getElementById('loader-fill');
+        const loaderPercent = document.getElementById('loader-percent');
+        let progress = 0;
+        let pageLoaded = false;
+        let loaderDone = false;
+
+        function setProgress(value) {
+            progress = value;
+            loaderFill.style.width = value + '%';
+            loaderPercent.textContent = Math.floor(value) + '%';
+        }
+
+        function hideLoader() {
+            if (loaderDone) return;
+            loaderDone = true;
+            loader.classList.add('hide');
+            document.documentElement.classList.remove('loading');
+            setTimeout(() => loader.remove(), 700);
+        }
+
+        function tickLoader() {
+            if (loaderDone) return;
+
+            if (pageLoaded) {
+                setProgress(Math.min(100, progress + Math.max(1.2, (100 - progress) * 0.15)));
+            } else {
+                setProgress(Math.min(90, progress + Math.max(0.1, (90 - progress) * 0.015)));
+            }
+
+            if (progress >= 100) {
+                setTimeout(hideLoader, 400);
+                return;
+            }
+
+            requestAnimationFrame(tickLoader);
+        }
+
+        window.addEventListener('load', () => setTimeout(() => { pageLoaded = true; }, 800));
+        setTimeout(() => { pageLoaded = true; }, 5000);
+
+        requestAnimationFrame(tickLoader);
+    </script>
+</body>
+</html>
